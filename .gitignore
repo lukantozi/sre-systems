@@ -1,0 +1,12 @@
+a.out
+*out
+*.exe
+
+*.o
+
+*~
+*.swp
+*.swo
+
+build/
+bin/
