@@ -21,7 +21,6 @@ int main(void) {
     }
 
     for (int i = 0; i < 5; i++) {
-        printf("%d\n", *(p++));
-        // printf("%d", *(a++)); --> will create an error (can't modify array variable);
+        printf("%d\n", *p++); // won't work on 'a' since we can't 
     }
 }
