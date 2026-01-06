@@ -1,32 +1,48 @@
 class Solution(object):
     def isValid(self, s):
-        #s_list = list(s)
         s_list = list(s)
+        #--------0,   1,   2
         left = ["(", "[", "{"]
         right = [")", "]", "}"]
-        for brac_1 in s_list:
-            if brac_1 in left:
-                brac_ind_left = left.index(brac_1)
-                for brac_2 in s_list[1:]:
-                    if brac_2 in right:
-                        if right.index(brac_2) == brac_ind_left:
-                            s_list.remove(brac_1)
-                            s_list.remove(brac_2)
-                            break
-            else:
+
+        flag = True
+        while flag:
+            curr_ptr = 0
+            next_ptr = 1
+            if s_list == []:
+                return True
+            current_bracket = s_list[curr_ptr]
+            if current_bracket in right:
                 return False
+            # if in left
+            flag_inner = True
+            while flag_inner:
+                current_bracket = s_list[curr_ptr]
+                left_index = left.index(current_bracket)
+                try:
+                    next_bracket = s_list[next_ptr]
+                except IndexError:
+                    return False
+                if next_bracket in right:
+                    if left_index == right.index(next_bracket):
+                        s_list.pop(curr_ptr)
+                        s_list.pop(next_ptr-1)
+                        curr_ptr = curr_ptr - 1 if curr_ptr > 0 else 0
+                        next_ptr = curr_ptr + 1
+                        flag_inner = False
+                        continue
+                    else:
+                        return False
+                else:
+                    curr_ptr += 1
+                    next_ptr += 1
 
-        if not s_list:
-            return True
-        else:
-            return False
-
-
+        
 
 solution = Solution()
 print(solution.isValid("()")) # true
 print(solution.isValid("()[]{}")) #true
 print(solution.isValid("(]")) # false
 print(solution.isValid("([])")) # true
-print(solution.isValid("([)]")) # true
-
+print(solution.isValid("([)]")) # false
+print(solution.isValid("[([]])")) # false
