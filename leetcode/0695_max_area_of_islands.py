@@ -13,7 +13,7 @@ class Solution:
 
 
         def dfs(r,c):
-            if r < 0 or r >= H or c < 0 or c > W:
+            if r < 0 or r >= H or c < 0 or c >= W:
                 return
             if grid[r][c] == 0 or visited[r][c]:
                 return
