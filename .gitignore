@@ -11,3 +11,5 @@ a
 
 build/
 bin/
+
+**/__pycache__
