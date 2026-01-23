@@ -75,7 +75,7 @@ class FileStorageImpl(FileStorage):
             self.storage[fname] = size
 
         # recompute remaining
-        used = sum(self.users[user_id][2].values())   # sum dict values [web:1089]
+        used = sum(self.users[user_id][2].values())
         total = self.users[user_id][0]
         self.users[user_id][1] = total - used
         return len(self.users[user_id][2])
