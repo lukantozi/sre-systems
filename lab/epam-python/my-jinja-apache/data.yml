@@ -1,0 +1,4 @@
+servername: /srv/httpd/example
+documentroot: /srv/httpd/example
+serveradmin: lukamamrik@proton.me
+directorypath: /srv/httpd/example
