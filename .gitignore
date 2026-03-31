@@ -13,3 +13,8 @@ build/
 bin/
 
 **/__pycache__
+*.log
+backups/
+a.out
+.venv
+*_bckup
