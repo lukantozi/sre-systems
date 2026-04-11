@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+fun() {
+    local var=132
+    echo $var
+}
+
+ret=$(fun)
+
+echo $ret
