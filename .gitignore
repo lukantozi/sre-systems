@@ -18,3 +18,6 @@ backups/
 a.out
 .venv
 *_bckup
+
+current.md
+todo.md
