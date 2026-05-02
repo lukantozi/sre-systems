@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
     int c;
     int line_count = 0;
     int char_count = 0;
-    int word_count = 0;
+    int word_count = 1;
     int space_flag = 0;
 
     FILE *pf = fopen(argv[1], "r");
@@ -31,6 +31,9 @@ int main(int argc, char **argv) {
         if ((c >= 0x09 && c <= 0x0D) || c == 0x20) {
                 space_flag = 1;
         }
+    }
+    if (char_count == 0) {
+        word_count = 0;
     }
     fclose(pf);
     printf("total lines = %d\n", line_count);
