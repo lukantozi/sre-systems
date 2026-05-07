@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 char* longestCommonPrefix(char** strs, int strsSize) {
-    if (strs[0][0] == '\0') {
-        return "";
-    }
+    if (strsSize == 0) return "";
+    if (strs[0][0] == '\0') return "";
+
     int i = 0;
     int j = 0;
     int buffSize = 201;
