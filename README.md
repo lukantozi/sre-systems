@@ -14,9 +14,9 @@ Built for skill development in SRE, backend, and DevOps fundamentals.
 
 ## Skills Practiced
 
-- **C** — memory management, systems programming
-- **Python** — file automation, web dev, testing
-- **Bash** — scripting, process automation  
-- **Linux** — Arch-based workflow, systems administration
+- **C** - memory management, systems programming
+- **Python** - file automation, web dev, testing
+- **Bash** - scripting, process automation  
+- **Linux** - Arch-based workflow, systems administration
 
 Continuous learning through deliberate practice.
