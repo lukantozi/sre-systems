@@ -12,3 +12,13 @@ class Solution(object):
 
 solution = Solution()
 print(solution.twoSum([3,2,4], 6))
+
+# O(n)
+class Solution(object):
+    def twoSum_On(self, nums, target):
+        seen = {}  # value -> index
+        for i, x in enumerate(nums):
+            need = target - x
+            if need in seen:
+                return [seen[need], i]
+            seen[x] = i

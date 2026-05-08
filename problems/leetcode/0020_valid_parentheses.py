@@ -46,3 +46,17 @@ print(solution.isValid("(]")) # false
 print(solution.isValid("([])")) # true
 print(solution.isValid("([)]")) # false
 print(solution.isValid("[([]])")) # false
+
+
+# O(n)
+class Solution(object):
+    def isValid_On(self, s):
+        want = {'(' : ')', '[' : ']', '{' : '}'}
+        st = []
+        for ch in s:
+            if ch in want:
+                st.append(want[ch])
+            else:
+                if not st or st.pop() != ch:
+                    return False
+        return not st
