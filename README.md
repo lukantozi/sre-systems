@@ -1,22 +1,34 @@
-# sre-systems
+# systems-lab
 
-Hands-on practice with C systems programming, Python automation, and bash scripting.
-Built for skill development in SRE, backend, and DevOps fundamentals.
+Practice repo for learning systems programming, algorithms, and automation on Linux.
 
-## Contents
+## Layout
 
-| Directory | Focus |
-|---|---|
-| `algorithms/` | Algorithm implementations in C (*Algorithm Design Manual*) |
-| `bgc/` | Low-level C: pointers, manual memory management, file I/O |
-| `interview-prep/` | LeetCode, coding challenges, problem-solving exercises |
-| `lab/` | Bash automation, Python scripting, system tools |
+- `bgc/`
+  C exercises from Beej’s Guide with focus on pointers, arrays, strings, structs, file I/O, and manual memory management
 
-## Skills Practiced
+- `cs-app3e/`
+  Material and exercises from Computer Systems: A Programmer’s Perspective
+  Includes work on data representation, bit operations, low level control flow, and assembly
 
-- **C** - memory management, systems programming
-- **Python** - file automation, web dev, testing
-- **Bash** - scripting, process automation  
-- **Linux** - Arch-based workflow, systems administration
+- `algorithms/`
+  Implementations of algorithms in C, based on The Algorithm Design Manual
 
-Continuous learning through deliberate practice.
+- `lab/`
+  Practical scripts and small tools for day to day work
+  Includes Bash scripts, Python utilities, and small C programs
+
+- `problems/`
+  LeetCode and other coding challenges in C and Python
+
+## Example mini tools
+
+Some of the small projects in this repo include text utilities in C (simple grep and word counting tools), Bash scripts for scanning disks, parsing logs, and Python helpers for copying, cleaning, and reorganizing files.
+
+## Focus
+
+- C systems programming
+- Computer architecture and low level behavior
+- Algorithms and problem solving
+- Bash scripting and Linux tooling
+- Python automation around files and processes
