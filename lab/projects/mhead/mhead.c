@@ -32,8 +32,9 @@ int main(int argc, char *argv[]) {
     if (argc == 1) out(stdin, LIMIT);
     else if (argc == 2 || argc == 3) {
         FILE *f = file_val(argv[1]);
-        int limit = (argc == 2) ? LIMIT : atoi(argv[2])
+        int limit = (argc == 2) ? LIMIT : atoi(argv[2]);
         out(f, limit);
         fclose(f);
-    return 0;
+        return 0;
+    }
 }
