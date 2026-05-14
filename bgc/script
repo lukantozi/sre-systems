@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+for file in $(ls -d ch*); do
+    ch=${file%%-*}
+    name=${file#*-}
+    num=${ch:2}
+    if [[ ${#num} -eq 1 ]]; then
+        echo "$file -> 0${num}-${name}"
+        mv "$file" "0${num}-${name}"
+    else
+        echo "$file -> ${num}-${name}"
+        mv "$file" "${num}-${name}"
+    fi
+done
