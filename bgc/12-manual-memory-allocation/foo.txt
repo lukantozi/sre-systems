@@ -1,5 +1,0 @@
-These sentences
-will be used
-to test realloc
-function from
-bg's guide to C
