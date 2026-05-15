@@ -1,34 +1,44 @@
 # systems-lab
 
-Practice repo for learning systems programming, algorithms, and automation on Linux.
+Systems programming in C, studied and built from first principles on Arch Linux.  
+Working through CS:APP, Beej's Guide to C, and Skiena's ADM.
 
-## Layout
+***
 
-- `bgc/`
-  C exercises from Beej’s Guide with focus on pointers, arrays, strings, structs, file I/O, and manual memory management
+## Tools (C)
 
-- `cs-app3e/`
-  Material and exercises from Computer Systems: A Programmer’s Perspective
-  Includes work on data representation, bit operations, low level control flow, and assembly
+Unix-style CLI tools built from scratch.
 
-- `algorithms/`
-  Implementations of algorithms in C, based on The Algorithm Design Manual
+| Tool | Description | Status |
+|------|-------------|--------|
+| [mhead](tools/mhead/) | `head(1)` clone — print first N lines | working |
+| [mgrep](tools/mgrep/) | `grep(1)` clone — pattern match lines | working |
+| [mcat](tools/mcat/) | `cat(1)` clone — concatenate and print files | working |
+| [mwc](tools/mwc/) | `wc(1)` clone — count lines, words, chars | working |
 
-- `lab/`
-  Practical scripts and small tools for day to day work
-  Includes Bash scripts, Python utilities, and small C programs
+***
 
-- `problems/`
-  LeetCode and other coding challenges in C and Python
+## LeetCode
 
-## Example mini tools
+Practice problems implemented in C, focusing on arrays, pointers, and core data structures.
 
-Some of the small projects in this repo include text utilities in C (simple grep and word counting tools), Bash scripts for scanning disks, parsing logs, and Python helpers for copying, cleaning, and reorganizing files.
+***
 
-## Focus
+## Katas (Python)
 
-- C systems programming
-- Computer architecture and low level behavior
-- Algorithms and problem solving
-- Bash scripting and Linux tooling
-- Python automation around files and processes
+Structured systems-design exercises with leveled test suites.
+
+| Kata | Description | Tests |
+|------|-------------|-------|
+| [minikv](katas/minikv/) | In-memory key-value store | 5 levels |
+| [mini-file-storage](katas/mini-file-storage/) | File storage system | 4 levels |
+
+***
+
+## Study
+
+| Material | Path |
+|----------|------|
+| CS:APP 3e — exercises | [`study/cs-app3e/`](study/cs-app3e/) |
+| Beej's Guide to C — exercises | [`study/bgc/`](study/bgc/) |
+| Algorithm Design Manual — ch1 | [`study/algorithms/`](study/algorithms/) |
